@@ -6,9 +6,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar {
-    transition: background-color 0.2s ease-in-out;
-  }
+
 
   #about{
     line-height: 30px;

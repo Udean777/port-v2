@@ -6,9 +6,8 @@ import 'animate.css';
 
 export default function About() {
   return (
-    <div className='min-h-screen bg-zinc-100 dark:bg-zinc-800 '>
-<Navbar/>
-    <div className='py-28 dark:text-white font-sans' id='about'>
+    <div className='min-h-screen py-16 bg-zinc-100 dark:bg-zinc-800' id='about'>
+    <div className='py-28 dark:text-white font-sans'>
       <div>
         <h1 className='border-b-2 border-blue-500 text-3xl font-sans font-bold flex justify-center w-40 m-auto'>About me</h1>
       </div>

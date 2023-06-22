@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import '../globals.css'
 import 'animate.css';
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -38,8 +38,8 @@ const Navbar = () => {
   }; 
 
   return (
-    <main className='animate__animated animate__fadeIn'>
-    <nav className='navbar backdrop-blur-sm border-b-2 border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-700/50'>
+    <main className='sticky top-0 animate__animated animate__fadeIn z-50'>
+    <nav className='navbar backdrop-blur-lg border-b-2 border-zinc-200 dark:border-zinc-700 bg-zinc-50/80 dark:bg-zinc-700/80'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -55,19 +55,19 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block font-sans">
               <div className="ml-10 flex items-baseline space-x-4 dark:text-white">
-                <Link href="/">
-                  <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Home</p>
+                <Link to='hero' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
+                  <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Home</p>
                 </Link>
-                <Link href="/about">
-                  <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">About</p>
+                <Link to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70} >
+                  <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">About</p>
                 </Link>
-                <Link href="/skills">
-                  <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
+                <Link to='skills' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
+                  <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
                 </Link>
-                <Link href="/services">
+                <Link to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
                   <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
                 </Link>
-                <Link href="/contact">
+                <Link to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
                   <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
                 </Link>
               </div>

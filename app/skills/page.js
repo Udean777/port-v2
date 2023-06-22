@@ -8,7 +8,7 @@ import { FaCss3Alt } from 'react-icons/fa';
 import { FaJs } from 'react-icons/fa';
 import styles from 'animate.css';
 
-export default function page() {
+export default function Skills() {
   const tabs = [
     {
       id: 'tab1',
@@ -60,8 +60,7 @@ export default function page() {
     },
   ];
   return (
-    <main className='min-h-screen bg-zinc-100 dark:bg-zinc-800 animate__fadeIn'>
-      <Navbar/>
+    <main className='min-h-screen py-16 bg-zinc-100 dark:bg-zinc-800 animate__fadeIn' id='skills'>
       <div className='dark:text-white'>
       <NavPills tabs={tabs}/>
       </div>
