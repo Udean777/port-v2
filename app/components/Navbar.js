@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import '../globals.css'
-import styles from 'animate.css';
+import 'animate.css';
 
 
 const Navbar = () => {

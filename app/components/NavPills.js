@@ -23,7 +23,7 @@ const NavPills = ({ tabs }) => {
             <a
               href={`#${tab.id}`}
               onClick={() => handleTabClick(tab.id)}
-              className={`inline-block py-2 px-4 ${
+              className={`inline-block py-2 px-4 transition-all ease-in ${
                 activeTab === tab.id
                   ? 'text-white bg-blue-500 rounded-3xl font-semibold'
                   : 'text-gray-900 dark:text-slate-200 font-normal'

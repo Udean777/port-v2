@@ -1,13 +1,12 @@
 'use client'
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Link from 'next/link'
 import 'animate.css';
 
 export default function About() {
   return (
-    <main className='min-h-screen bg-zinc-100 dark:bg-zinc-800 animate__animated animate__fadeIn'>
+    <div className='min-h-screen bg-zinc-100 dark:bg-zinc-800 '>
 <Navbar/>
     <div className='py-28 dark:text-white font-sans' id='about'>
       <div>
@@ -25,6 +24,6 @@ export default function About() {
         </p>
       </div>
     </div>
-    </main>
+    </div>
   )
 }
