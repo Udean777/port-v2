@@ -65,10 +65,10 @@ const Navbar = () => {
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
                 </Link>
                 <Link to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
-                  <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
+                  <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
                 </Link>
                 <Link to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70}>
-                  <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
+                  <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
                 </Link>
               </div>
             </div>
