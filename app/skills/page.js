@@ -1,17 +1,10 @@
 'use client'
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
 import NavPills from '../components/NavPills';
 import Image from 'next/image';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
-import { FaJs } from 'react-icons/fa';
-import { FaBootstrap } from 'react-icons/fa';
-import {TbBrandTailwind} from 'react-icons/tb'
-import { TbBrandNextjs } from 'react-icons/tb';
-import { TbBrandPhp } from 'react-icons/tb';
+import { FaHtml5, FaBootstrap, FaCss3Alt, FaJs } from 'react-icons/fa';
+import {TbBrandTailwind, TbBrandPhp, TbBrandNextjs, TbBrandLaravel} from 'react-icons/tb'
 import {RiReactjsFill} from 'react-icons/ri'
-import { TbBrandLaravel } from 'react-icons/tb';
 import 'animate.css';
 
 export default function Skills() {
@@ -98,6 +91,7 @@ export default function Skills() {
       ),
     },
   ];
+
   return (
     <main className='min-h-screen animate__animated animate__fadeIn relative' id='skills'>
       <div className='dark:text-white'>
