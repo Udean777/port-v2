@@ -6,6 +6,7 @@ import { FaHtml5, FaBootstrap, FaCss3Alt, FaJs } from 'react-icons/fa';
 import {TbBrandTailwind, TbBrandPhp, TbBrandNextjs, TbBrandLaravel} from 'react-icons/tb'
 import {RiReactjsFill} from 'react-icons/ri'
 import 'animate.css';
+import Navbar from '../components/Navbar';
 
 export default function Skills() {
   const tabs = [
@@ -93,9 +94,12 @@ export default function Skills() {
   ];
 
   return (
-    <main className='min-h-screen animate__animated animate__fadeIn relative' id='skills'>
+    <main className='min-h-screen relative bg-zinc-200 dark:bg-zinc-800' id='skills'>
+      <Navbar/>
       <div className='dark:text-white'>
+        <div className='animate__animated animate__fadeInDown'>
       <NavPills tabs={tabs}/>
+      </div>
       </div>
     </main>
   )

@@ -6,8 +6,9 @@ import 'animate.css';
 
 export default function About() {
   return (
-    <div className='min-h-screen py-5' id='about'>
-    <div className='py-20 dark:text-white font-sans'>
+    <main className='min-h-screen bg-zinc-200 dark:bg-zinc-800'> 
+    <Navbar/>
+    <div className='py-28 dark:text-white font-sans animate__animated animate__fadeInDown'>
       <div>
         <h1 className='border-b-2 border-blue-500 text-3xl font-sans font-bold flex justify-center w-40 m-auto'>About me</h1>
       </div>
@@ -23,6 +24,6 @@ export default function About() {
         </p>
       </div>
     </div>
-    </div>
+    </main>
   )
 }

@@ -3,6 +3,7 @@ import 'animate.css';
 
 const NavPills = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const contentRef = useRef(null);
 
   const handleTabClick = (tabId) => {
@@ -17,6 +18,7 @@ const NavPills = ({ tabs }) => {
       };
       contentRef.current.scrollTo(0, 0);
       contentRef.current.scrollTo(scrollOptions);
+      setScrollPosition(contentRef.current.scrollTop);
     }
   }, [activeTab]);
 
@@ -47,7 +49,7 @@ const NavPills = ({ tabs }) => {
           ))}
         </ul>
 
-        <div ref={contentRef}>
+        <div ref={contentRef} style={{ scrollTop: scrollPosition }}>
           {tabs.map((tab) => (
             <div
               key={tab.id}

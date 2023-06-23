@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className='min-h-screen flex justify-center animate__animated animate__fadeIn pb-20' id='hero'>
+    <div className='py-28 flex justify-center animate__animated animate__fadeInDown' id='hero'>
       <div className='flex flex-col md:flex-row justify-center items-center'>
         <div className='mb-8 md:mb-0'>
           <Image src='/hero1.jpeg' priority={true} width={300} height={300} alt='hero' className='rounded-full w-64 md:w-72 lg:w-80' />
