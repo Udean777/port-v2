@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    env: {
+      OG_IMAGE: '/hero1.png',
+    },
+  };
+  
+  module.exports = nextConfig;
+  
