@@ -1,35 +1,12 @@
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { FaMoon, FaSun } from 'react-icons/fa';
 import '../globals.css'
 import 'animate.css';
+import DarkModeToggle from './DarkModeToggle';
 import Link from 'next/link';
 
+
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const storedDarkMode = localStorage.getItem('darkMode');
-    if (storedDarkMode) {
-      setDarkMode(storedDarkMode === 'true');
-    }
-  }, []);
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add('dark');
-      localStorage.setItem('darkMode', true);
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('darkMode', false);
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-  };
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -37,7 +14,7 @@ const Navbar = () => {
   }; 
 
   return (
-    <main className='sticky top-0 backdrop-blur-sm bg-zinc-50/30 dark:bg-zinc-700/30 z-50'>
+    <main className='sticky top-0 backdrop-blur-sm bg-zinc-50/30 dark:bg-zinc-700/30 animate__animated animate__fadeIn z-50'>
     <nav className='navbar border-b-2 border-zinc-200 dark:border-zinc-700'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -46,36 +23,34 @@ const Navbar = () => {
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 transition-all ease-in"
               >
                 <span className="sr-only">Open main menu</span>
                 {isOpen ? <FiX className="block h-6 w-6" /> : <FiMenu className="block h-6 w-6" />}
               </button>
             </div>
-            <div className="hidden md:block font-sans animate__animated animate__fadeIn">
+            <div className="hidden md:block font-sans">
               <div className="ml-10 flex items-baseline space-x-4 dark:text-white">
                 <Link href='/'>
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Home</p>
                 </Link>
-                <Link  href='/about'>
+                <Link href='/about'>
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">About</p>
                 </Link>
                 <Link href='/skills'>
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
                 </Link>
-                <Link href='/projects'>
+                <Link href=''>
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
                 </Link>
-                <Link href='/contact'>
+                <Link href=''>
                   <p className="cursor-pointer hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
                 </Link>
               </div>
             </div>
           </div>
           <div className="flex items-center dark:text-white">
-            <button className="p-2" onClick={toggleDarkMode}>
-              {darkMode ? <FaSun size={23} /> : <FaMoon size={23} />}
-            </button>
+           <DarkModeToggle/>
           </div>
         </div>
       </div>
@@ -89,7 +64,7 @@ const Navbar = () => {
             <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">About</p>
           </Link>
           <Link href="/skills">
-            <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Skills</p>
+            <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-medium">Skills</p>
           </Link>
           <Link href="/services">
             <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Projects</p>

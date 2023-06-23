@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      color: {
+        darkBackground: '#111111',
+        darkText: '#ffffff'
+      },
       spacing:{
         '97': '400px',
         '98': '600px',
