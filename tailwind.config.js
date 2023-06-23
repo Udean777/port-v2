@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gradientColors: {
+        'custom-gradient': ['#9333ea', '#e11d48', '#0f766e'],
+      },
       color: {
         darkBackground: '#111111',
         darkText: '#ffffff'

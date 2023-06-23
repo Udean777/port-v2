@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
@@ -19,7 +20,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className="bg-gray-200 dark:bg-gray-800 p-2 rounded-full"
+      className="bg-gradient-to-t from-blue-500 to-purple-600 p-2 rounded-full"
       onClick={toggleDarkMode}
     >
       {darkMode ? <FaSun size={25}/> : <FaMoon size={25}/>}
