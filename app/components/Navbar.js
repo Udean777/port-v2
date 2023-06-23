@@ -64,7 +64,7 @@ const Navbar = () => {
             <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">About</p>
           </Link>
           <Link href="/skills">
-            <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in px-3 py-2 rounded-md text-sm font-medium">Skills</p>
+            <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Skills</p>
           </Link>
           <Link href="/services">
             <p className="hover:bg-gray-700 hover:text-white dark:hover:bg-gray-500 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Projects</p>
