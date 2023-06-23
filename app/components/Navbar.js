@@ -14,7 +14,7 @@ const Navbar = () => {
   }; 
 
   return (
-    <main className='sticky top-0 backdrop-blur-sm bg-zinc-50/30 dark:bg-zinc-700/30 animate__animated animate__fadeIn z-50'>
+    <main className='sticky top-0 backdrop-blur-sm bg-zinc-50/30 dark:bg-zinc-700/30 animate__animated animate__fadeInDown z-50'>
     <nav className='navbar border-b-2 border-zinc-200 dark:border-zinc-700'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
