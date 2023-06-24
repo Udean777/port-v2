@@ -13,7 +13,7 @@ export default function Projects() {
           
           <Link href='https://sajudin.vercel.app/'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
-              <img className="w-full rounded-sm" src="/project.jpeg" alt="Card Image" />
+              <img loading='lazy' className="w-full rounded-sm" src="/project.jpeg" alt="Card Image" />
               <div className="px-6 py-4">
                 <div className="font-bold text-md mb-2">My First Portfolio</div>
                 <p className="text-gray-700 dark:text-gray-100 text-sm">I made my first ever portfolio website, using only bootstrap + vanilla css.</p>
@@ -23,7 +23,7 @@ export default function Projects() {
 
           <Link href='https://sajudin.vercel.app/'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
-              <img className="w-full rounded-sm" src="/projects2.png" alt="Card Image" />
+              <img loading='lazy' className="w-full rounded-sm" src="/projects2.png" alt="Card Image" />
               <div className="px-6 py-4">
                 <div className="font-bold text-md mb-2">Clone Landing Page</div>
                 <p className="text-gray-700 dark:text-gray-100 text-sm">I'm cloning JKT48 Official website Landing Page (Not responsive yet).</p>
@@ -33,7 +33,7 @@ export default function Projects() {
 
           <Link href='https://sajudin.vercel.app/'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
-              <img className="w-full rounded-sm" src="/project3.png" alt="Card Image" />
+              <img loading='lazy' className="w-full rounded-sm" src="/project3.png" alt="Card Image" />
               <div className="px-6 py-4">
                 <div className="font-bold text-md mb-2">My Second Portfolio</div>
                 <p className="text-gray-700 dark:text-gray-100 text-sm">I made my second portfolio, using React + Next JS + Tailwind CSS.</p>
