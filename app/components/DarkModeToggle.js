@@ -20,7 +20,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className="bg-gradient-to-t from-blue-500 to-purple-600 p-2 rounded-full"
+      className="bg-gradient-to-t from-blue-500 to-blue-100 dark:to-purple-950 p-2 rounded-full"
       onClick={toggleDarkMode}
     >
       {darkMode ? <FaSun size={25}/> : <FaMoon size={25}/>}
