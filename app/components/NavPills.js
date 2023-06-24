@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react';
+import { Base64 } from 'js-base64';
 import 'animate.css';
 
 const NavPills = ({ tabs }) => {
@@ -23,8 +24,18 @@ const NavPills = ({ tabs }) => {
     }
   }, [activeTab]);
 
+  const encryptId = (id) => {
+    const encodedId = Base64.encode(id);
+    return encodedId;
+  };
+  
+  const decryptId = (encryptedId) => {
+    const decodedId = Base64.decode(encryptedId);
+    return decodedId;
+  };
+
   return (
-    <div className='flex justify-center py-20 font-sans animate__animated animate__fadeIn'>
+    <div className='flex justify-center md:py-20 lg:py-20 font-sans'>
       <div className='w-95 md:w-98 lg:w-100'>
         <div className='py-10'>
           <h1 className='font-bold border-l-4 border-blue-500 text-3xl'>SKILLS</h1>
@@ -36,7 +47,7 @@ const NavPills = ({ tabs }) => {
               className="-mb-px mr-1"
             >
               <a
-                href={`#${tab.id}`}
+                href={`#${encryptId(tab.id)}`}
                 onClick={() => handleTabClick(tab.id)}
                 className={`py-2 px-4 transition-all ease-in font-bold ${
                   activeTab === tab.id
@@ -54,7 +65,7 @@ const NavPills = ({ tabs }) => {
           {tabs.map((tab) => (
             <div
               key={tab.id}
-              id={tab.id}
+              id={decryptId(tab.id)}
               className={`py-2 ${activeTab === tab.id ? '' : 'hidden'}`}
             >
               {tab.content}
