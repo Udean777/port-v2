@@ -15,7 +15,7 @@ const NavPills = ({ tabs }) => {
     if (contentRef.current) {
       const scrollOptions = {
         behavior: 'smooth',
-        block: 'start',
+        block: 'end',
       };
       contentRef.current.scrollTo(0, 0);
       contentRef.current.scrollTo(scrollOptions);
@@ -38,7 +38,7 @@ const NavPills = ({ tabs }) => {
               <a
                 href={`#${tab.id}`}
                 onClick={() => handleTabClick(tab.id)}
-                className={`inline-block py-2 px-4 transition-all ease-in font-bold ${
+                className={`py-2 px-4 transition-all ease-in font-bold ${
                   activeTab === tab.id
                     ? 'text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl font-semibold'
                     : 'text-gray-900 dark:text-slate-200 font-normal'

@@ -41,10 +41,10 @@ const Navbar = () => {
                 <Link href='/skills'>
                   <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
                 </Link>
-                <Link href=''>
+                <Link href='/projects'>
                   <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
                 </Link>
-                <Link href=''>
+                <Link href='/contact'>
                   <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
                 </Link>
               </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
           <Link href="/skills">
             <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Skills</p>
           </Link>
-          <Link href="/services">
+          <Link href="/projects">
             <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Projects</p>
           </Link>
           <Link href="/contact">
