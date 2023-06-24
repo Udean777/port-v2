@@ -19,6 +19,7 @@ module.exports = {
         '95': '357px',
         '97': '400px',
         '98': '600px',
+        '99': '800px',
         '100': '1000px',
       },
       backgroundImage: {

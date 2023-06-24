@@ -6,7 +6,7 @@ export default function Hero() {
     <div className='py-28 flex justify-center animate__animated animate__fadeInDown' id='hero'>
       <div className='flex flex-col md:flex-row justify-center items-center'>
         <div className='mb-8 md:mb-0'>
-          <Image as="image" src='/hero1.jpeg' priority={true} width={300} height={300} alt='hero' loading='lazy' className='rounded-full w-64 md:w-72 lg:w-80' />
+          <Image as="image" src='/hero1.jpeg' width={300} height={300} alt='hero' loading='lazy' className='rounded-full w-64 md:w-72 lg:w-80' />
         </div>
         <div className='text-center lg:text-start md:ms-5 lg:ms-0 md:text-start lg:px-10 font-sans'>
           <div className='dark:text-white'>

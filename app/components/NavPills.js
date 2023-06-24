@@ -24,7 +24,7 @@ const NavPills = ({ tabs }) => {
   }, [activeTab]);
 
   return (
-    <div className='flex justify-center py-10 font-sans animate__animated animate__fadeIn'>
+    <div className='flex justify-center py-20 font-sans animate__animated animate__fadeIn'>
       <div className='w-95 md:w-98 lg:w-100'>
         <div className='py-10'>
           <h1 className='font-bold border-l-4 border-blue-500 text-3xl'>SKILLS</h1>
@@ -55,7 +55,7 @@ const NavPills = ({ tabs }) => {
             <div
               key={tab.id}
               id={tab.id}
-              className={`py-10 ${activeTab === tab.id ? '' : 'hidden'}`}
+              className={`py-2 ${activeTab === tab.id ? '' : 'hidden'}`}
             >
               {tab.content}
             </div>
