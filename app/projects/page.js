@@ -11,7 +11,7 @@ export default function Projects() {
         <h1 className='font-bold border-l-4 border-blue-500 text-3xl sm:text-4xl md:text-3xl mb-6 sm:mb-8'>PROJECTS</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8'>
           
-          <Link href='https://sajudin.vercel.app/'>
+          <Link href='https://sajudin.vercel.app/' target='__blank'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
               <img loading='lazy' className="w-full rounded-sm" src="/project.jpeg" alt="Card Image" />
               <div className="px-6 py-4">
@@ -21,7 +21,7 @@ export default function Projects() {
             </div>
           </Link>
 
-          <Link href='https://sajudin.vercel.app/'>
+          <Link href='https://jeketi-web.vercel.app/' target='__blank'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
               <img loading='lazy' className="w-full rounded-sm" src="/projects2.png" alt="Card Image" />
               <div className="px-6 py-4">
@@ -31,7 +31,7 @@ export default function Projects() {
             </div>
           </Link>
 
-          <Link href='https://sajudin.vercel.app/'>
+          <Link href='https://udean777.vercel.app/' target='__blank'>
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-lg backdrop-blur-sm bg-zinc-200/30">
               <img loading='lazy' className="w-full rounded-sm" src="/project3.png" alt="Card Image" />
               <div className="px-6 py-4">
