@@ -34,13 +34,6 @@ export default function Skills() {
              border-zinc-500 hover:border-yellow-400 transition ease-in">
           <FaJs className='m-auto w-auto py-5' size={150}/>
         </div>
-
-        <div className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
-           dark:text-white dark:hover:text-purple-700 backdrop-blur-lg bg-zinc-50/10 dark:bg-zinc-700/30
-            dark:hover:bg-transparent hover:bg-transparent hover:text-purple-700 border-2
-             border-zinc-500 hover:border-purple-700 transition ease-in">
-          <TbBrandPhp className='m-auto w-auto py-5' size={150}/>
-        </div>
         </div>
         </div>
       ),
