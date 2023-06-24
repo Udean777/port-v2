@@ -47,6 +47,7 @@ export default function Skills() {
       content: (
         <div className='flex justify-center lg:justify-start font-sans'>
         <div className="justify-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+         
           <div className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
            dark:text-white dark:hover:text-purple-600  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-purple-600 border-2
