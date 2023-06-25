@@ -20,10 +20,10 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className="bg-gradient-to-t from-blue-500 to-blue-100 dark:to-purple-950 p-2 rounded-full"
+      className="p-2 rounded-full"
       onClick={toggleDarkMode}
     >
-      {darkMode ? <FaSun size={25}/> : <FaMoon size={25}/>}
+      {darkMode ? <FaSun className='text-stone-200' size={25}/> : <FaMoon className='text-stone-800' size={25}/>}
     </button>
   );
 };

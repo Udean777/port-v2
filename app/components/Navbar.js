@@ -31,21 +31,21 @@ const Navbar = () => {
               </button>
             </div>
             <div className="hidden md:block font-sans">
-              <div className="ml-10 flex items-baseline space-x-4 dark:text-white">
+              <div className="ml-10 flex items-baseline space-x-4 text-stone-800 dark:text-stone-200">
                 <Link href='/'>
-                  <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Home</p>
+                  <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Home</p>
                 </Link>
                 <Link href='/about'>
-                  <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">About</p>
+                  <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in px-3 py-2 rounded-md text-sm font-bold">About</p>
                 </Link>
                 <Link href='/skills'>
-                  <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
+                  <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Skills</p>
                 </Link>
                 <Link href='/projects'>
-                  <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
+                  <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Projects</p>
                 </Link>
                 <Link href='/contact'>
-                  <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
+                  <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in px-3 py-2 rounded-md text-sm font-bold">Contact</p>
                 </Link>
               </div>
             </div>
@@ -59,19 +59,19 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 dark:text-white">
           <Link href="/">
-            <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Home</p>
+            <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Home</p>
           </Link>
           <Link href="/about">
-            <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">About</p>
+            <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in block px-3 py-2 rounded-md text-base font-medium">About</p>
           </Link>
           <Link href="/skills">
-            <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Skills</p>
+            <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Skills</p>
           </Link>
           <Link href="/projects">
-            <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Projects</p>
+            <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Projects</p>
           </Link>
           <Link href="/contact">
-            <p className="hover:bg-gradient-to-r from-blue-500 to-purple-600 hover:text-white dark:hover:bg-gradient-to-r dark:from-blue-700 dark:to-purple-800 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Contact</p>
+            <p className="hover:text-stone-200 hover:bg-stone-800 dark:hover:text-stone-700 dark:hover:bg-stone-300 transition ease-in block px-3 py-2 rounded-md text-base font-medium">Contact</p>
           </Link>
         </div>
       </div>

@@ -8,11 +8,10 @@ import Link from 'next/link'
 
 export default function page() {
   return (
-    <div className='min-h-screen bg-gradient-to-r from-zinc-200 to-blue-100 
-    dark:bg-gradient-to-r dark:from-zinc-950 dark:to-blue-950'>
+    <div className='min-h-screen bg-stone-300 dark:bg-stone-600'>
       <Navbar/>
 
-      <div className='m-auto py-10 sm:py-20 md:py-28 max-w-6xl px-4 sm:px-6 md:px-8 animate__animated animate__fadeInDown dark:text-white'>
+      <div className='m-auto py-10 sm:py-20 md:py-28 max-w-6xl px-4 sm:px-6 md:px-8 animate__animated animate__fadeInDown text-stone-800 dark:text-stone-200'>
         <h1 className='font-bold border-l-4 border-blue-500 text-3xl sm:text-4xl md:text-3xl mb-6 sm:mb-8'>CONTACT</h1>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
 

@@ -5,14 +5,13 @@ import 'animate.css';
 
 export default function About() {
   return (
-    <main className='min-h-screen bg-gradient-to-r from-zinc-200 to-blue-100 
-    dark:bg-gradient-to-r dark:from-zinc-950 dark:to-blue-950'> 
+    <main className='min-h-screen bg-stone-300 dark:bg-stone-600'> 
       <Navbar/>
       <div className='py-20 dark:text-white font-sans animate__animated animate__fadeInDown'>
         <div>
           <h1 className='border-b-2 border-blue-500 text-3xl font-sans font-bold flex justify-center w-40 m-auto'>About me</h1>
         </div>
-        <div className='text-center m-auto py-5 md:w-98 lg:w-100 xl:w-100 leading-7'>
+        <div className='text-center m-auto py-5 md:w-98 lg:w-100 xl:w-100 leading-7 text-stone-800 dark:text-stone-200'>
           <p>Im a Junior<span className='text-blue-500 font-bold'> FrontEnd Developer</span>, i love designing a website and makes it responsive, so the users can use my application in mobile & desktop.
             I just graduated from Vocational High School <strong>SMKN 1 Binjai</strong>, my vocational program is <strong>RPL</strong>. So... programming is like my 
             love at the first sight, i suddenly enjoy it, i like making things with it, it brings joys to me whenever i feel sad, but it can makes me depressed so hard. 

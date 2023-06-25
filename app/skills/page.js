@@ -86,10 +86,9 @@ export default function Skills() {
   ];
 
   return (
-    <main className='min-h-screen bg-gradient-to-r from-zinc-200 to-blue-100 
-    dark:bg-gradient-to-r dark:from-zinc-950 dark:to-blue-950 overflow-hidden'>
+    <main className='min-h-screen bg-stone-300 dark:bg-stone-600 overflow-hidden'>
       <Navbar/>
-      <div className='dark:text-white'>
+      <div className='text-stone-800 dark:text-stone-200'>
         <div className='animate__animated animate__fadeInDown'>
       <NavPills tabs={tabs}/>
       </div>
