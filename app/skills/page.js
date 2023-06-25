@@ -32,8 +32,8 @@ export default function Skills() {
 
         <div className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
            dark:text-white dark:hover:text-yellow-400  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent hover:text-yellow-400 border-2
-             border-zinc-500 hover:border-yellow-400 transition ease-in">
+            dark:hover:bg-transparent hover:bg-transparent hover:text-yellow-500 border-2
+             border-zinc-500 hover:border-yellow-500 transition ease-in">
           <FaJs className='m-auto w-auto py-5' size={150}/>
           <p className='flex justify-center pb-2 font-sans font-bold'>Beginner😁</p>
         </div>
@@ -88,7 +88,7 @@ export default function Skills() {
   return (
     <main className='min-h-screen bg-stone-300 dark:bg-stone-600 overflow-hidden'>
       <Navbar/>
-      <div className='text-stone-800 dark:text-stone-200'>
+      <div className='text-stone-800 dark:text-stone-200 overflow-hidden'>
         <div className='animate__animated animate__fadeInDown'>
       <NavPills tabs={tabs}/>
       </div>
