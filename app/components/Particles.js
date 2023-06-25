@@ -71,15 +71,15 @@ const Particle = () => {
                             default: "bounce",
                         },
                         random: true,
-                        speed: 1,
-                        straight: false,
+                        speed: 0.2,
+                        straight: true,
                     },
                     number: {
                         density: {
                             enable: true,
                             area: 900,
                         },
-                        value: 50,
+                        value: 80,
                     },
                     opacity: {
                         value: 0.7,
