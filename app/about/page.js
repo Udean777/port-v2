@@ -9,7 +9,7 @@ export default function About() {
       <Navbar/>
       <div className='py-20 dark:text-white font-sans animate__animated animate__fadeInDown overflow-hidden'>
         <div>
-          <h1 className='border-b-2 border-blue-500 text-3xl font-sans font-bold flex justify-center w-40 m-auto'>About me</h1>
+          <h1 className='border-b-2 border-blue-500 text-3xl sm:text-4xl md:text-3xl font-sans font-bold flex justify-center w-40 m-auto'>About me</h1>
         </div>
         <div className='text-center m-auto py-5 md:w-98 lg:w-100 xl:w-100 leading-7 text-stone-800 dark:text-stone-200'>
           <p>Im a Junior<span className='text-blue-500 font-bold'> FrontEnd Developer</span>, i love designing a website and makes it responsive, so the users can use my application in mobile & desktop.
