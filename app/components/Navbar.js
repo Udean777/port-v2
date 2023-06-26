@@ -24,7 +24,7 @@ const Navbar = () => {
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gradient-to-r from-stone-500 to-stone-600 transition-all ease-in"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gradient-to-r from-slate-500 to-slate-600 transition-all ease-in"
               >
                 <span className="sr-only">Open main menu</span>
                 {isOpen ? <FiX className="block h-6 w-6" /> : <FiMenu className="block h-6 w-6" />}
