@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function page() {
   return (
-    <div className='min-h-screen bg-stone-300 dark:bg-stone-600'>
+    <div className='min-h-screen'>
       <Navbar/>
 
       <div className='m-auto py-10 sm:py-20 md:py-28 max-w-6xl px-4 sm:px-6 md:px-8 animate__animated animate__fadeInDown text-stone-800 dark:text-stone-200 overflow-hidden'>

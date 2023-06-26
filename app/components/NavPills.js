@@ -38,7 +38,7 @@ const NavPills = ({ tabs }) => {
     <div className='flex justify-center md:py-20 lg:py-20 font-sans'>
       <div className='w-95 md:w-98 lg:w-100'>
         <div className='py-10'>
-          <h1 className='font-bold border-l-4 border-stone-400 text-3xl'>SKILLS</h1>
+          <h1 className='font-bold border-l-4 border-blue-500 text-3xl'>SKILLS</h1>
         </div>
         <ul className="flex">
           {tabs.map((tab) => (
@@ -51,7 +51,7 @@ const NavPills = ({ tabs }) => {
                 onClick={() => handleTabClick(tab.id)}
                 className={`py-2 px-4 transition-all ease-in font-bold ${
                   activeTab === tab.id
-                    ? 'text-white bg-gradient-to-r from-stone-500 to-stone-600 rounded-3xl font-semibold'
+                    ? 'text-white bg-gradient-to-r from-slate-600 to-slate-500 dark:bg-gradient-to-b dark:from-slate-600 dark:to-slate-500 rounded-3xl font-semibold'
                     : 'text-gray-900 dark:text-slate-200 font-normal'
                 }`}
               >

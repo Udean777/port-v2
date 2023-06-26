@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
       className="p-2 rounded-full"
       onClick={toggleDarkMode}
     >
-      {darkMode ? <FaSun className='text-stone-200' size={25}/> : <FaMoon className='text-stone-800' size={25}/>}
+      {darkMode ? <FaSun className='text-slate-100' size={25}/> : <FaMoon className='text-slate-800' size={25}/>}
     </button>
   );
 };

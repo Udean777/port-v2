@@ -11,8 +11,8 @@ export default function Hero() {
         <div className='text-center lg:text-start md:ms-5 lg:ms-0 md:text-start lg:px-10 font-sans'>
           <div className='text-stone-800 dark:text-stone-200'>
             <h3 className='text-2xl'>Hello! My name is</h3>
-            <h1 className='text-4xl font-bold font-sans'>Sajudin <span className='text-stone-500 dark:text-stone-400'>Ma'ruf</span></h1>
-            <h3 className='text-lg'>a Junior <span className='text-stone-500 dark:text-stone-400 font-bold font-mono'>FrontEnd Developer</span></h3>
+            <h1 className='text-4xl font-bold font-sans'>Sajudin <span className='text-blue-500'>Ma'ruf</span></h1>
+            <h3 className='text-lg'>a Junior <span className='text-blue-500 font-bold font-mono'>FrontEnd Developer</span></h3>
           </div>
         </div>
       </div>
